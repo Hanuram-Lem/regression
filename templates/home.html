@@ -9,25 +9,25 @@
     <h1 style="display: flex; justify-content: center;">Welcome To The FWI Prediction Page</h1>
     <p style="margin-left:20%; font-weight:600">Fill the details below : </p>
     <form action="{{url_for('predict_datapoint')}}" method="POST" style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="temperature" placeholder="Temperature" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="rh" placeholder="Humidity" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="ws" placeholder="Wind Speed" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="rain" placeholder="Rainfall" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="ffmc" placeholder="FFMC" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="dmc" placeholder="DMC" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="isi" placeholder="ISI" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="dc" placeholder="DC" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="bui" placeholder="BUI" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="rating" placeholder="Rating" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="classes" placeholder="Classes" required="required"><br><br>
-        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="region" placeholder="Region" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="temperature" placeholder="Temperature" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="rh" placeholder="Humidity" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="ws" placeholder="Wind Speed" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="rain" placeholder="Rainfall" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="ffmc" placeholder="FFMC" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="dmc" placeholder="DMC" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="isi" placeholder="ISI" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="dc" placeholder="DC" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="bui" placeholder="BUI" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="rating" placeholder="Rating" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="classes" placeholder="Classes" required="required"><br><br>
+        <input type="text" style="width:25%; border:0; margin:0; border-radius: 4px;" name="region" placeholder="Region" required="required"><br><br>
         <button type="submit" onclick="showResult()" style="border-radius:4px;">Predict</button>
     </form>
-    <h2 style="display:hidden; margin-left:20%;">The FWI prediction is {{result}}</h2>
+    <!-- <h2 style="display:hidden; margin-left:20%;">The FWI prediction is {{result}}</h2> -->
 </body>
-<!-- <script>
-    function showResult() {
-        document.querySelector('h2').style.width = "100%";
+<script>
+    function showResult(){
+        alert("The FWI prediction is {{result}}");
     }
-</script> -->
+</script>
 </html>
