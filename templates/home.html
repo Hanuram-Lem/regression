@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue; color: darkblue;">
+    <h1>Welcome for the FWI prediction page</h1>
+    <p>Fill the below form : </p>
+    <form action="{{url_for('predict_datapoint')}}" method="POST" style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="temperature" placeholder="Temperature" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="rh" placeholder="Humidity" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="ws" placeholder="Wind Speed" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="rain" placeholder="Rainfall" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="ffmc" placeholder="FFMC" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="dmc" placeholder="DMC" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="isi" placeholder="ISI" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="dc" placeholder="DC" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="bui" placeholder="BUI" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="rating" placeholder="Rating" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="classes" placeholder="Classes" required="required"><br><br>
+        <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="region" placeholder="Region" required="required"><br><br>
+        <button type="submit">Predict</button>
+    </form>
+    <h2>The FWI prediction is {{result}}</h2>
+</body>
+</html>
