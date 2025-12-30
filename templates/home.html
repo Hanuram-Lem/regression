@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: lightblue; color: darkblue;">
-    <h1>Welcome for the FWI prediction page</h1>
+    <h1 style="display: flex; justify-content: center;">Welcome for the FWI prediction page</h1>
     <p>Fill the below form : </p>
     <form action="{{url_for('predict_datapoint')}}" method="POST" style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
         <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="temperature" placeholder="Temperature" required="required"><br><br>
