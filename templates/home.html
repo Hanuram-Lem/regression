@@ -7,7 +7,7 @@
 </head>
 <body style="background-color: lightblue; color: darkblue;">
     <h1 style="display: flex; justify-content: center;">Welcome for the FWI prediction page</h1>
-    <p>Fill the below form : </p>
+    <p style="margin-left:35%; font-weight:900">Fill the below form : </p>
     <form action="{{url_for('predict_datapoint')}}" method="POST" style="display: flex; align-items: center; flex-direction: column; justify-content: center;">
         <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="temperature" placeholder="Temperature" required="required"><br><br>
         <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="rh" placeholder="Humidity" required="required"><br><br>
@@ -23,12 +23,11 @@
         <input type="text" style="width:30%; border:0; margin:0; border-radius: 4px;" name="region" placeholder="Region" required="required"><br><br>
         <button type="submit" onclick="showResult()">Predict</button>
     </form>
-    <h2 style="display: none;">The FWI prediction is {{result}}</h2>
+    <h2 style="display: hidden;">The FWI prediction is {{result}}</h2>
 </body>
 <script>
     function showResult() {
         document.querySelector('h2').style.display = 'block';
     }
-    showResult();
 </script>
 </html>
